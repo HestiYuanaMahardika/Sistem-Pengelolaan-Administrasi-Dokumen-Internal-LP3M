@@ -1,0 +1,234 @@
+<!-- ## This is included in the Index.html page using "include('Form')" function -->
+
+<form id="myForm" style="background-color: #ffffff;  margin-top: 30px; padding-left: 40px; border-radius: 13px; padding: 30px;" class="form-horizontal" onsubmit="handleFormSubmit(this)"> <!-- Call JavaScript function "handleFormSubmit" -->
+
+    <div id="message"></div>
+    <input type="text" id="RecId" name="RecId" value="" style="display: none">
+	<!-- <div class="wrapper"> -->
+    <div class="title">
+      LAPORAN PEKERJAAN PERAWATAN DAN PERBAIKAN MESIN (LP3M)
+    </div>
+
+<!-- Batas penghapusan percobaan -->
+<!-- Nomor SPR -->
+        <div class="form-group col-md-2.1" style="margin-left: 1px;">
+          <label for="text" style="color: #000000; font-weight: bold;">Menunjuk SPR No. &#42;</label>
+         <textarea class="form-check" style="background-color: #e4e4e4" id="nomorspr" name="nomorspr" rows="2" cols="33" placeholder="Masukan Nomor SPR" autofocus required></textarea>
+       </div>
+
+<!-- ## Hasil Pengukuran / Pengecekan --> 
+<div class="form-row">
+  <div class="form-group col-md-2.1" style="margin-left: 1px;">
+    <label for="Text" style="color: #000000; font-weight: bold;">Hasil Pengukuran / Pengecekan &#42;</label>
+      <textarea class="form-check" style="background-color: #e4e4e4" id="hasilpengukuran" name="hasilpengukuran" rows="4" cols="33" placeholder="Masukan Hasil Pengukuran / Pengecekan" autofocus required ></textarea>
+  </div> 
+
+<!-- ## Penyebab Kerusakan --> 
+  <div class="form-group col-md-2.1" style="margin-left: 30px;">
+    <label for="text" style="color: #000000; font-weight: bold;">Penyebab Kerusakan</label>
+      <textarea class="form-check" style="background-color: #e4e4e4" id="penyebab" name="penyebab" rows="4" cols="33" placeholder="Masukan Penyebab Kerusakan" ></textarea>
+  </div>
+
+<!-- ## Status Penyebab Kerusakan --> 
+  <!-- <div class="form-group" style="margin-left: 30px;">
+    <label for="exampleFormControlSelect1" style="color: #000000; font-weight: bold;">    Status Penyebab Kerusakan &#42;</label>
+    <select class="form-control" style="background-color: #e4e4e4" id="statuspenyebab" name="statuspenyebab" rows="4" cols="35" placeholder="Masukan Lokasi Divisi MRO" >
+      <option>Status Penyebab Kerusakan</option>
+      <option>Aus</option>
+      <option>Retak / Patah</option>
+      <option>Komponen Tak Berfungsi</option>
+      <option>Kelebihan Beban</option>
+      <option>Salah Operasi</option>
+      <option>Kelalaian</option>
+      <option>Kecelakaan</option>
+      <option>Lain Lain</option>
+    </select>
+  </div>  
+</div> -->
+
+<!-- ## Status Penyebab Kerusakan Checkbox --> 
+  <div class="form-group">
+    <label for="text" style="color: #000000; font-weight: bold;">Status Penyebab Kerusakan</label>
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <input class="checkbox-input" type="checkbox" name="statuspenyebab" id="Aus" value="Aus">
+        <label class="checkbox-label" for="Aus">Aus</label>
+      </div>
+      <div class="checkbox">
+        <input class="checkbox-input" type="checkbox" name="statuspenyebab" id="Retak / Patah" value="Retak / Patah">
+        <label class="checkbox-label" for="Retak / Patah">Retak / Patah</label>
+      </div>
+      <div class="checkbox">
+        <input class="checkbox-input" type="checkbox" name="statuspenyebab" id="Kelebihan Beban" value="Kelebihan Beban">
+        <label class="checkbox-label" for="Kelebihan Beban">Kelebihan Beban</label>
+      </div>
+      <div class="checkbox">
+        <input class="checkbox-input" type="checkbox" name="statuspenyebab" id="Salah Operasi" value="Salah Operasi">
+        <label class="checkbox-label" for="Salah Operasi">Salah Operasi</label>
+      </div>
+      <div class="checkbox">
+        <input class="checkbox-input" type="checkbox" name="statuspenyebab" id="Kelalaian" value="Kelalaian">
+        <label class="checkbox-label" for="Kelalaian">Kelalaian</label>
+      </div>
+      <div class="checkbox">
+        <input class="checkbox-input" type="checkbox" name="statuspenyebab" id="Lain Lain" value="Lain Lain">
+        <label class="checkbox-label" for="Lain Lain">Lain Lain</label>
+      </div>
+    </div>
+  </div>
+
+<!-- ## Status Penyebab Kerusakan Checkbox Percobaan 1-->
+<!-- <form action="proses.php" method="get" id="statuspenyebab" name="statuspenyebab">
+      <p>Kemampuan Bahasa Pemrogaman ?</p>
+      <p><input type='checkbox' name='bahasa1' value='php' />PHP</p>
+      <p><input type='checkbox' name='bahasa2' value='asp' />ASP</p>
+      <p><input type='checkbox' name='bahasa3' value='jsp' />JSP</p> -->
+<!-- </form> -->
+
+<!-- ## Status Penyebab Kerusakan Checkbox Percobaan 2--> 
+<!-- <div id="list1" class="dropdown-check-list" tabindex="100">
+  <span class="anchor">Select Fruits</span>
+  <ul class="items">
+    <li><input type="checkbox" />Apple </li>
+    <li><input type="checkbox" />Orange</li>
+    <li><input type="checkbox" />Grapes </li>
+    <li><input type="checkbox" />Berry </li>
+    <li><input type="checkbox" />Mango </li>
+    <li><input type="checkbox" />Banana </li>
+    <li><input type="checkbox" />Tomato</li>
+  </ul>
+</div> -->
+
+<!-- Status Penyebab Kerusakan Checkbox Percobaan 3-->
+<!-- <select name="ingredients[]" id="ingredients" multiple="multiple">
+    <option value="cheese">Cheese</option>
+    <option value="tomatoes">Tomatoes</option>
+    <option value="mozarella">Mozzarella</option>
+    <option value="mushrooms">Mushrooms</option>
+    <option value="pepperoni">Pepperoni</option>
+    <option value="onions">Onions</option>
+</select> -->
+
+
+<!-- ## Status Penyebab Kerusakan Checkbox Percobaan 4--> 
+  <!-- <form>
+    <div class="multiselect">
+      <div class="selectBox" onclick="showCheckboxes()">
+        <select>
+          <option>Status Penyebab Kerusakan</option>
+        </select>
+        <div class="overSelect"></div>
+      </div>
+      <div id="statuspenyebab">
+        <label for="one">
+          <input type="checkbox" id="one" />Aus</label>
+        <label for="two">
+          <input type="checkbox" id="two" />Retak / Patah</label>
+        <label for="three">
+          <input type="checkbox" id="three" />Komponen tak berfungsi</label>
+        <label for="four">
+          <input type="checkbox" id="four" />Kelebihan beban</label>
+        <label for="five">
+          <input type="checkbox" id="five" />Salah operasi</label>
+        <label for="six">
+          <input type="checkbox" id="six" />Kelalaian</label>
+        <label for="seven">
+          <input type="checkbox" id="seven" />Kecelakaan</label>
+        <label for="eight">
+          <input type="checkbox" id="eight" />Lain - lain</label>
+      </div>
+    </div>
+  </form> -->
+
+
+<!-- ## Nama --> 
+<div class="form-row">
+    <div class="form-group col-md-2.1" style="margin-left: 8px;">
+      <label for="text" style="color: #000000; font-weight: bold;">Nama &#42;</label>
+      <textarea class="form-check" style="background-color: #e4e4e4" id="nama" name="nama" rows="2" cols="33" placeholder="Masukan Nama" autofocus required ></textarea>
+    </div>
+
+<!-- ## Tanggal --> 
+  <div class="form-group col-md-2.1" style="margin-left: 30px;">
+      <p for="Date" style="color: #000000; font-weight: bold;">Tanggal &#42;</p>
+      <input type="date" style="background-color: #e4e4e4; height:40px; width:180px;" id="tanggal" name="tanggal" rows="2" cols="50" placeholder="Masukan Tanggal" autofocus required></textarea>
+  </div>
+
+<!-- ## Jam Mulai --> 
+	<div class="form-group col-md-2.1" style="margin-left: 30px;">
+			<p style="color: #000000; font-weight: bold;">Jam Mulai &#42;</p>
+       <input type="time" style="background-color: #e4e4e4; height:40px; width:180px;" id="jammulai" name="jammulai" rows="2" cols="50" placeholder="Masukan Jam Mulai" autofocus required></input>
+	</div>
+
+<!-- ## Jam Selesai --> 
+	<div class="form-group col-md-2.1" style="margin-left: 30px;">
+			<p style="color: #000000; font-weight: bold;">Jam Selesai &#42;</p>
+       <input type="time" style="background-color: #e4e4e4; height:40px; width:180px;" id="jamselesai" name="jamselesai" rows="2" cols="50" placeholder="Masukan Jam Selesai" autofocus required></input>
+	</div>
+
+<!-- ## Penyelesaian -->
+<div class="form-row">
+  <div class="form-group col-md-2.1" style="margin-left: 11px;">
+    <label for="text" style="color: #000000; font-weight: bold;">Penyelesaian &#42;</label>
+        <textarea class="form-check" style="background-color: #e4e4e4" id="penyelesaian" name="penyelesaian" rows="4" cols="76" placeholder="Masukan Penyelesaian" autofocus required></textarea>
+  </div>
+
+<!-- ## Status Penyelesaian --> 
+  <div class="form-group">
+    <label for="text" style="color: #000000; font-weight: bold;">Status Penyelesaian</label>
+    <div class="col-sm-offset-2 col-sm-10">
+      <div class="checkbox">
+        <input class="checkbox-input" type="checkbox" name="statuspenyelesaian" id="Status Penyelesaian" value="Status Penyelesaian">
+        <label class="checkbox-label" for="Status Penyelesaian">Status Penyelesaian</label>
+      </div>
+      <div class="checkbox">
+        <input class="checkbox-input" type="checkbox" name="statuspenyelesaian" id="Komponen diganti" value="Komponen diganti">
+        <label class="checkbox-label" for="Komponen diganti">Komponen diganti</label>
+      </div>
+      <div class="checkbox">
+        <input class="checkbox-input" type="checkbox" name="statuspenyelesaian" id="Diperiksa dan distel" value="Diperiksa dan distel">
+        <label class="checkbox-label" for="Diperiksa dan distel">Diperiksa dan distel</label>
+      </div>
+      <div class="checkbox">
+        <input class="checkbox-input" type="checkbox" name="statuspenyelesaian" id="Diperbaiki dengan dibuat" value="Diperbaiki dengan dibuat">
+        <label class="checkbox-label" for="Diperbaiki dengan dibuat">Diperbaiki dengan dibuat</label>
+      </div>
+      <!-- <div class="checkbox">
+        <input class="checkbox-input" type="checkbox" name="statuspenyelesaian" id="Dimodifikasi" value="Dimodifikasi">
+        <label class="checkbox-label" for="Dimodifikasi">Dimodifikasi</label>
+      </div>
+      <div class="checkbox">
+        <input class="checkbox-input" type="checkbox" name="statuspenyelesaian" id="Lain Lain" value="Lain Lain">
+        <label class="checkbox-label" for="Lain Lain">Lain Lain</label>
+      </div> -->
+    </div>
+  </div>
+
+<!-- ## Status Penyelesaian Tanpa Checkbox --> 
+  <!-- <div class="form-group" style="margin-left: 30px;">
+    <label for="exampleFormControlSelect1" style="color: #000000; font-weight: bold;">    Status Penyelesaian &#42;</label>
+    <select class="form-control" style="background-color: #e4e4e4" id="statuspenyelesaian" name="statuspenyelesaian" placeholder="Masukan Status Penyelesaian" >
+      <option>Status Penyelesaian</option>
+      <option>Komponen diganti</option>
+      <option>Diperiksa dan distel</option>
+      <option>Diperbaiki dengan dibuat</option>
+      <option>Dimodifikasi</option>
+      <option>Dipindah, pasang baru</option>
+      <option>Diperlukan evaluasi</option>
+      <option>Lain Lain</option>
+    </select>
+  </div> -->
+
+  </div>
+    <input class="btn btn-primary center-block" style="width: 49%!important; margin-left: 15px;" type="submit" value="Submit"></br></br></br>
+
+    <input class="btn btn-secondary center-block" style="width: 49%!important" type="reset" value="Reset"></br></br>
+
+      <!-- <div class="button">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        <input class="btn btn-secondary" type="reset" value="Reset">
+      </div> -->
+    </div>
+</div> 
+  </div>
+</form>
